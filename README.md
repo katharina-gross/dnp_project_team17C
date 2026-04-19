@@ -99,15 +99,20 @@ Contains:
 - recovery steps
 - final result after recovery
 
+
 ## Input Format
 
 Each log line must follow this format:
 
+```text
 IP - - [DD/Mon/YYYY:HH:MM:SS] "METHOD /path HTTP/1.1" STATUS SIZE
+```
 
 Example:
 
+```text
 127.0.0.1 - - [02/Apr/2026:10:01:15] "GET /login HTTP/1.1" 404 321
+```
 
 Invalid or malformed lines are ignored.
 
@@ -121,8 +126,9 @@ The system follows the MapReduce pipeline:
 2. **Map**  
    Each worker processes log lines and emits:
 
+```text
 (time_bucket + error_type) → 1
-
+```
 
 3. **Shuffle**  
 Results are grouped by key.
