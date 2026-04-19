@@ -130,10 +130,35 @@ The system follows the MapReduce pipeline:
 (time_bucket + error_type) → 1
 ```
 
+Example:
+
+```text
+2026-04-02 10:01_4xx → 1
+2026-04-02 10:01_5xx → 1
+```
+
 3. **Shuffle**  
 Results are grouped by key.
 
-4. **Reduce**  
+Example:
+
+```python
+{
+  "2026-04-02 10:01_4xx": [1, 1],
+  "2026-04-02 10:01_5xx": [1]
+}
+```
+
+5. **Reduce**  
 Values are aggregated into final counts.
+
+Example:
+
+```python
+{
+  "2026-04-02 10:01_4xx": 2,
+  "2026-04-02 10:01_5xx": 1
+}
+```
 
 
