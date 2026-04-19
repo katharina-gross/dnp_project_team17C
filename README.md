@@ -79,7 +79,14 @@ python -m main --mode test        # run tests
 
 ### Output Files
 
-After running the system, results are stored in results/final:
+After running the system, results are stored in:
+
+```text
+results/final/
+├── benchmark.json
+├── benchmark_plot.png
+└── recovery_log.txt
+```
 
 ### benchmark.json
 Main output file containing:
@@ -88,10 +95,14 @@ Main output file containing:
 - validation status
 - benchmark results
 
+---
+
 ### benchmark_plot.png
 Graph showing performance depending on:
 - chunk size
 - number of workers
+
+---
 
 ### recovery_log.txt
 Contains:
