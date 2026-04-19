@@ -1,0 +1,15 @@
+203.0.113.8 - - [02/Apr/2026:10:00:05] "GET /catalog HTTP/1.1" 200 512
+10.0.0.5 - - [02/Apr/2026:10:00:21] "POST /user/profile HTTP/1.1" 201 890
+192.168.1.10 - - [02/Apr/2026:10:00:46] "PATCH /settings/privacy HTTP/1.1" 204 321
+198.51.100.17 - - [02/Apr/2026:10:01:07] "DELETE /orders/17 HTTP/1.1" 404 678
+127.0.0.1 - - [02/Apr/2026:10:01:18] "PUT /api/users/42 HTTP/1.1" 200 1024
+172.16.0.3 - - [02/Apr/2026:10:01:42] "GET /reports/daily HTTP/1.1" 500 456
+66.249.66.1 - - [02/Apr/2026:10:02:03] "POST /checkout/start HTTP/1.1" 302 745
+8.8.8.8 - - [02/Apr/2026:10:02:20] "PATCH /inventory/stock HTTP/1.1" 202 1536
+145.67.23.19 - - [02/Apr/2026:10:02:47] "DELETE /cart/items/7 HTTP/1.1" 204 231
+91.198.174.192 - - [02/Apr/2026:10:03:08] "POST /login HTTP/1.1" 401 128
+203.0.113.8 - - [02/Apr/2026:10:03:17] "GET /support/ticket/88 HTTP/1.1" 429 2048
+192.168.1.10 - - [02/Apr/2026:10:03:33] "PUT /api/payments/confirm HTTP/1.1" 301 3072
+10.0.0.5 - - [02/Apr/2026:10:03:49] "PATCH /notifications/mark-read HTTP/1.1" 503 4096
+172.16.0.3 - - [02/Apr/2026:10:04:12] "GET /dashboard/summary HTTP/1.1" 200 678
+198.51.100.17 - - [02/Apr/2026:10:04:41] "POST /wishlist/items HTTP/1.1" 201 890
