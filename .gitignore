@@ -1,0 +1,7 @@
+data/
+results/
+.idea/
+__pycache__/
+*/__pycache__/
+*.pyc
+README.md
